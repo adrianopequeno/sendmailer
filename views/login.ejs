@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle %></title>
+</head>
+<body>
+  <main>
+    <form action="/login" method="POST">
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+      </div>
+
+      <div class="form-control">
+        <label for="confirmPassword">Confirme Password</label>
+        <input type="password" name="confirmPassword" id="confirmPassword">
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </main>
+</body>
+</html>
