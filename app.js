@@ -6,7 +6,7 @@ const sendgridTransport = require('nodemailer-sendgrid-transport');
 const transporter = nodemailer.createTransport(
   sendgridTransport({
     auth:{
-      api_key: "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",
+      api_key: "Key SendGrid you",
     }
 }));
 
@@ -33,7 +33,7 @@ app.post("/login", (req, res, next) => {
   // envio de e-mail de boas vindas
   return transporter.sendMail({
     to: req.body.email,
-    from: "contato@projectaweb.com.br",
+    from: "you email contact here!",
     subject: "Login feito com sucesso!",
     html: "<h1>Você realizou o login com sucesso!</h1>",
   })
